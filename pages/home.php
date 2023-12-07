@@ -9,6 +9,9 @@ use Class\CliMatch\Question;
 ob_start();
 
 ?>
+<div id="pinguin">
+
+</div>
 
 <div id="match">
     <div id="card">
@@ -27,6 +30,12 @@ ob_start();
             <div id="titleAnswer"></div>
             <div id="details"></div>
             <button id="next" class="button_tinder">Next</button>
+        </div>
+
+        <div id="results" class="hide">
+            <div id="titleResults"></div>
+            <div id="corrects">Nombres de bonnes réponses : </div>
+            <div id="errors">Nombres de mauvaises réponses : </div>
         </div>
     </div>
 
