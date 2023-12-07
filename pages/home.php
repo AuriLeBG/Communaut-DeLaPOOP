@@ -26,7 +26,7 @@ ob_start();
         <div id="answer" class="hide">
             <div id="titleAnswer"></div>
             <div id="details"></div>
-            <button id="next">Next</button>
+            <button id="next" class="button_tinder">Next</button>
         </div>
     </div>
 
