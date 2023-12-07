@@ -118,5 +118,65 @@
         "answer":true,
         "explication": "Oui, l'utilisation de produits chimiques dans l'agriculture peut affecter la qualité de l'eau en entraînant la contamination des eaux souterraines et de surface par les pesticides et les engrais.",
         "image":"agriculture_chimique.webp"
+    },
+    {
+        "question": "Le gaspillage alimentaire contribue-t-il aux problèmes environnementaux ?",
+        "answer": true,
+        "explication": "Oui, le gaspillage alimentaire contribue aux problèmes environnementaux en gaspillant des ressources telles que l'eau, l'énergie et les terres agricoles, tout en générant des émissions de gaz à effet de serre dans le processus de décomposition des déchets alimentaires.",
+        "image": "gaspillage_alimentaire.webp"
+    },
+    {
+        "question": "Les empreintes écologiques varient-elles selon les modes de vie ?",
+        "answer": true,
+        "explication": "Oui, les empreintes écologiques varient selon les modes de vie, les habitudes de consommation et les choix individuels. Certains modes de vie peuvent avoir un impact plus important sur l'environnement que d'autres.",
+        "image": "empreinte_ecologique.webp"
+    },
+    {
+        "question": "Est-ce que la dégradation des sols affecte la sécurité alimentaire ?",
+        "answer": true,
+        "explication": "Oui, la dégradation des sols peut affecter la sécurité alimentaire en réduisant la fertilité des terres agricoles, en diminuant les rendements des cultures et en augmentant la vulnérabilité aux phénomènes météorologiques extrêmes.",
+        "image": "degradation_sols.webp"
+    },
+    {
+        "question": "Les technologies vertes sont-elles la solution ultime pour lutter contre le changement climatique ?",
+        "answer": false,
+        "explication": "Non, bien que les technologies vertes soient importantes, la lutte contre le changement climatique nécessite également des changements comportementaux, des politiques environnementales efficaces et une sensibilisation mondiale.",
+        "image": "technologies_vertes.webp"
+    },
+    {
+        "question": "Est-ce que la désertification est principalement causée par des facteurs naturels ?",
+        "answer": false,
+        "explication": "Non, la désertification est souvent causée par une combinaison de facteurs naturels tels que la sécheresse et des activités humaines telles que la déforestation et la surutilisation des terres.",
+        "image": "desertification.webp"
+    },
+    {
+        "question": "Les énergies fossiles sont-elles toujours nécessaires malgré le développement des énergies renouvelables ?",
+        "answer": true,
+        "explication": "Oui, actuellement, les énergies fossiles sont encore nécessaires pour répondre à la demande mondiale d'énergie. Cependant, la transition vers les énergies renouvelables est cruciale pour réduire les émissions de gaz à effet de serre et atténuer les impacts sur l'environnement.",
+        "image": "energies_fossiles.webp"
+    },
+    {
+        "question": "Est-ce que les activités humaines ont un impact sur la disparition des espèces animales ?",
+        "answer": true,
+        "explication": "Oui, les activités humaines telles que la destruction des habitats, la chasse excessive et la pollution ont un impact significatif sur la disparition des espèces animales à l'échelle mondiale.",
+        "image": "disparition_especes.webp"
+    },
+    {
+        "question": "Les pratiques agricoles durables contribuent-elles à la préservation de la biodiversité ?",
+        "answer": true,
+        "explication": "Oui, les pratiques agricoles durables contribuent à la préservation de la biodiversité en favorisant des méthodes respectueuses de l'environnement, telles que la rotation des cultures, la conservation des sols et la protection des habitats naturels.",
+        "image": "agriculture_durable.webp"
+    },
+    {
+        "question": "Est-ce que les océans absorbent une part importante du dioxyde de carbone atmosphérique ?",
+        "answer": true,
+        "explication": "Oui, les océans absorbent une part importante du dioxyde de carbone atmosphérique, ce qui contribue à atténuer les effets du changement climatique. Cependant, cela entraîne également l'acidification des océans, ce qui peut avoir des conséquences néfastes sur la vie marine.",
+        "image": "acidification_oceans.webp"
+    },
+    {
+        "question": "Est-ce que la permaculture favorise une agriculture plus durable ?",
+        "answer": true,
+        "explication": "Oui, la permaculture favorise une agriculture plus durable en utilisant des principes écologiques pour concevoir des systèmes agricoles durables, résilients et respectueux de l'environnement.",
+        "image": "permaculture.webp"
     }
 ]
