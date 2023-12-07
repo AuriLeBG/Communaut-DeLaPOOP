@@ -7,22 +7,23 @@
     },
     {
         "question": "Est-ce que tous les plastiques sont recyclables ?",
-        "anwser": "0",
-        "explication": "Non, tous les plastiques ne sont pas recyclables. Certains types de plastiques ne peuvent pas être recyclés en raison de leur composition chimique."
+        "anwser": false,
+        "explication": "Non, tous les plastiques ne sont pas recyclables. Certains types de plastiques ne peuvent pas être recyclés en raison de leur composition chimique.",
+        "image" : "plastique.png"
     },
     {
         "question": "L'énergie solaire est-elle une source d'énergie renouvelable ?",
-        "answer": "1",
+        "answer": true,
         "explication": "Oui, l'énergie solaire est une source d'énergie renouvelable car elle provient du soleil, qui est une ressource inépuisable."
     },
     {
         "question": "Est-ce que le réchauffement climatique est uniquement causé par l'activité humaine ?",
-        "anwser": "0",
+        "anwser": false,
         "explication": "Non, bien que l'activité humaine soit un facteur majeur du réchauffement climatique, d'autres facteurs naturels comme les éruptions volcaniques et les variations solaires jouent également un rôle."
     },
     {
         "question": "Est-ce que la consommation d'eau a un impact sur l'environnement ?",
-        "answer" : "1",
+        "answer" : true,
         "explication": "Oui, la consommation excessive d'eau peut avoir un impact sur l'environnement en épuisant les ressources en eau douce et en perturbant les écosystèmes aquatiques."
     }
 ]
