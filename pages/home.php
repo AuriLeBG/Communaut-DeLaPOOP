@@ -4,22 +4,12 @@ session_start();
 require_once "..".DIRECTORY_SEPARATOR."Class" . DIRECTORY_SEPARATOR . "autoloader.php";
 
 use Class\CliMatch\Template;
+use Class\CliMatch\Question;
 
 ob_start();
-?>
-
-    <form id="AdvancedSearchForm" method="POST" action="recherche.php">
-        <h2>Recherche avancée</h2>
-        <input class="searchbar" type="text" name="search" placeholder="Je cherche">
-
-
-        <button id ="BoutonAvancedSearch" type="submit" name="IsAdvancedSearch" value="true">
-            Rechercher
-        </button>
-
-    </form>
-<?php
 
 $content = ob_get_clean();
-
+$class_question = new Question();
+$data = $class_question->lire_json("question.json");
+$class_question->afficher_image_json($data[0]->image);
 Template::render($content);
