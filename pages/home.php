@@ -1,7 +1,8 @@
 <?php
 session_start();
 
-require_once "..".DIRECTORY_SEPARATOR."class" . DIRECTORY_SEPARATOR . "autoloader.php";
+require_once "..".DIRECTORY_SEPARATOR."Class" . DIRECTORY_SEPARATOR . "autoloader.php";
+
 use Class\CliMatch\Template;
 
 ob_start();
