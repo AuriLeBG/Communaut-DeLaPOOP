@@ -28,6 +28,12 @@ ob_start();
             <div id="details"></div>
             <button id="next" class="button_tinder">Next</button>
         </div>
+
+        <div id="results" class="hide">
+            <div id="titleResults"></div>
+            <div id="corrects">Nombres de bonnes réponses : </div>
+            <div id="errors">Nombres de mauvaises réponses : </div>
+        </div>
     </div>
 
 </div>
