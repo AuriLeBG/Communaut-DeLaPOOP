@@ -106,14 +106,19 @@ footer {
 }
 
 #card_image{
-    width: 400px;
-    height: 200px;
+    max-width: 400px;
+    max-height: 220px;
     overflow: hidden;
+    object-fit: cover;
     padding: 10px;
 }
 
 #divButtons{
     vertical-align: bottom;
+}
+
+#details{
+    padding: 10px;
 }
 
 #title{

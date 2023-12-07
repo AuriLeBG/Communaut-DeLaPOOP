@@ -21,6 +21,13 @@ document.addEventListener('DOMContentLoaded', async function () {
     let titleAnswer = document.getElementById('titleAnswer')
     let details = document.getElementById('details')
 
+    let results = document.getElementById('results')
+    let titleResults = document.getElementById('titleResults')
+    let corrects = document.getElementById('corrects')
+    let errors = document.getElementById('errors')
+
+    let nbCorrects = 0
+    let nbErrors = 0
 
     let currentQuestion;
     changeQuestion()
@@ -28,23 +35,24 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.log(currentQuestion)
 
     function changeQuestion(){
-        if(questionsList.length > 0){
-            let index = Math.floor(Math.random() * (questionsList.length) )
-            currentQuestion = questionsList[index]
-            questionsList.splice(index, 1)
-            title.textContent = currentQuestion.question
-            image.setAttribute('src', "../image/"+currentQuestion.image)
-        }
+        let index = Math.floor(Math.random() * (questionsList.length) )
+        currentQuestion = questionsList[index]
+        questionsList.splice(index, 1)
+        title.textContent = currentQuestion.question
+        image.setAttribute('src', "../image/"+currentQuestion.image)
+
     }
 
     function wrongAnswer()
     {
         titleAnswer.textContent = 'Incorrect !'
+        nbErrors++;
     }
 
     function correctAnswer()
     {
         titleAnswer.textContent = 'Correct !'
+        nbCorrects++;
     }
 
     function revealCorrection(){
@@ -77,8 +85,18 @@ document.addEventListener('DOMContentLoaded', async function () {
     })
 
     buttonNext.addEventListener('mousedown', function(){
-        hideCorrection()
-        changeQuestion()
+        if(questionsList.length > 0){
+            hideCorrection()
+            changeQuestion()
+        }
+        else{
+            answer.classList.add('hide')
+            results.classList.remove('hide')
+
+            corrects.textContent += nbCorrects
+            errors.textContent += nbErrors
+            titleResults.textContent = "Malheureusement, il n'y a plus d'autres questions !"
+        }
     })
 })
 

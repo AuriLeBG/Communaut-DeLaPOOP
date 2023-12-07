@@ -1,17 +1,28 @@
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: black;
-        }
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
 
-        #terminalContainer {
-            margin: 2em 1em 2em 1em;
-            color: limegreen;
-            font-family: 'Courier New', monospace;
-            white-space: pre-wrap;
-            overflow-y: auto;
-            font-size: 16px;
-            height: 100vh;
-            line-height: 1.33em;
-        }
+#terminalContainer {
+    margin: 2em 1em 4em 1em; /* Modifié pour respecter vos spécifications */
+    color: limegreen;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    overflow-y: auto;
+    font-size: 16px;
+    height: calc(100vh - 4em); /* Utilisation de calc() pour ajuster la hauteur */
+    line-height: 1.33em;
+    padding: 1em; /* Ajout de padding pour la marge interne */
+}
+
+
+#terminalContainer::-webkit-scrollbar {
+    width: 0.5em; /* Largeur de la barre de défilement */
+}
+
+#terminalContainer::-webkit-scrollbar-thumb {
+    background-color: darkgray; /* Couleur de la poignée de la barre de défilement */
+    border-radius: 4px; /* Bordure de la poignée */
+}
