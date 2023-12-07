@@ -9,6 +9,8 @@ async function getData() {
 document.addEventListener('DOMContentLoaded', async function () {
     let questionsList = await getData()
 
+    let card = document.getElementById('card')
+
     let image = document.getElementById('card_image')
     let question = document.getElementById('question')
     let title = document.getElementById('title')
@@ -32,7 +34,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     let currentQuestion;
     changeQuestion()
 
-    console.log(currentQuestion)
 
     function changeQuestion(){
         let index = Math.floor(Math.random() * (questionsList.length) )
@@ -46,12 +47,14 @@ document.addEventListener('DOMContentLoaded', async function () {
     function wrongAnswer()
     {
         titleAnswer.textContent = 'Incorrect !'
+        card.classList.add('card-error')
         nbErrors++;
     }
 
     function correctAnswer()
     {
         titleAnswer.textContent = 'Correct !'
+        card.classList.add('card-correct')
         nbCorrects++;
     }
 
@@ -64,6 +67,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     function hideCorrection(){
         question.classList.remove('hide')
         answer.classList.add('hide')
+        card.classList.remove('card-correct')
+        card.classList.remove('card-error')
     }
 
     function verifyAnswer(answer)
