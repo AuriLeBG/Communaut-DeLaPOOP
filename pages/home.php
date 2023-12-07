@@ -12,14 +12,12 @@ echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
 <div id="match">
     <div id="card">
-        <div id="question">
-
-        </div>
+        <div id="question"></div>
         <div id="image">
-            <img src="../image/..png" alt="deforestation">
+            <img id="card_image" src="" alt="">
         </div>
-        <button id="buttonFalse"></button>
-        <button id="buttonTrue"></button>
+        <button id="buttonFalse">False</button>
+        <button id="buttonTrue">True</button>
     </div>
 </div>
 

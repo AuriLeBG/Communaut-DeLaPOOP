@@ -7,15 +7,47 @@ await fetch('http://localhost/Communaut-DeLaPOOP/pages/api.php').then(response =
     })
  */
 
-let responseData;
+
 async function getData() {
     let response = await fetch('http://localhost/Communaut-DeLaPOOP/pages/api.php');
-    responseData = await response.json()
-    console.log(responseData)
+    let questionsList = await response.json()
+    return questionsList
 }
 
+getData()
 
-getData();
+document.addEventListener('DOMContentLoaded', async function () {
+    let questionsList = await getData()
 
-let buttonFalse = document.getElementById('buttonFalse');
-let buttonTrue = document.getElementById('buttonTrue');
+    let buttonFalse = document.getElementById('buttonFalse');
+    let buttonTrue = document.getElementById('buttonTrue');
+
+    let question = document.getElementById('question')
+    let image = document.getElementById('card_image')
+
+
+    let currentQuestion;
+    changeQuestion()
+
+    console.log(currentQuestion)
+
+    function changeQuestion(){
+        let index = Math.floor(Math.random() * (questionsList.length) )
+        currentQuestion = questionsList[index]
+        questionsList.splice(index, 1)
+        question.textContent = currentQuestion.question
+    }
+
+    buttonFalse.addEventListener('mousedown', function(){
+        if(questionsList.length > 0)
+            changeQuestion()
+    })
+
+    buttonTrue.addEventListener('mousedown', function(){
+        if(questionsList.length > 0)
+            changeQuestion()
+    })
+})
+
+
+
