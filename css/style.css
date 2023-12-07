@@ -29,15 +29,16 @@ footer {
 
 #menu{
     background-color: #9ebbef;
-    font-size: x-large;
+    font-size: xxx-large;
     font-weight: bold;
     border-radius: 5px;
     vertical-align: middle;
+    padding: 10px;
 }
 
 #main-title{
     align-self: center;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 #footerText{
@@ -92,4 +93,15 @@ footer {
 .hide{
     display: none;
 }
+
+#titleAnswer{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+#details{
+
+}
+
+
 
