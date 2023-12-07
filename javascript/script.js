@@ -1,15 +1,6 @@
-/*
-await fetch('http://localhost/Communaut-DeLaPOOP/pages/api.php').then(response => {
-        console.log(response.ok)
-        return response.json()
-    }).then(data => {
-        return data
-    })
- */
-
 
 async function getData() {
-    let response = await fetch('http://localhost/Communaut-DeLaPOOP/pages/api.php');
+    let response = await fetch('http://localhost/Communaut-DeLaPOOP/pages/get_questions.php');
     let questionsList = await response.json()
     return questionsList
 }
@@ -42,6 +33,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             currentQuestion = questionsList[index]
             questionsList.splice(index, 1)
             title.textContent = currentQuestion.question
+            image.setAttribute('src', "../image/"+currentQuestion.image)
         }
     }
 
@@ -58,7 +50,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     function revealCorrection(){
         question.classList.add('hide')
         answer.classList.remove('hide')
-
         details.textContent = currentQuestion.explication
     }
 
