@@ -8,15 +8,33 @@ var konamiCodeIndex = 0;
 function handleKeyPress(event) {
     // Récupérer le code de la touche
     var keyCode = event.code;
-
     // Vérifier si la touche actuelle correspond à la séquence attendue
     if (keyCode === konamiCode[konamiCodeIndex]) {
+        let div = document.getElementById("img_pinguin");
+        console.log(div);
         // La touche est correcte, passer à la suivante
         konamiCodeIndex++;
-
+        if(konamiCodeIndex === 1 || konamiCodeIndex === 2){
+            div.src = '../image/pingouin/konamihaut.png';
+        }
+        else if(konamiCodeIndex === 3 || konamiCodeIndex === 4){
+            div.src = '../image/pingouin/konamibas.png';
+        }
+        else if(konamiCodeIndex === 5 || konamiCodeIndex === 7){
+            div.src = '../image/pingouin/konamigauche.png';
+        }
+        else if(konamiCodeIndex === 6 || konamiCodeIndex === 8){
+            div.src = '../image/pingouin/konamidroite.png';
+        }
+        else if(konamiCodeIndex === 9){
+            div.src = '../image/pingouin/konamiB.png';
+        }
+        else{
+            div.src = '../image/pingouin/pengouin.png';
+        }
         // Vérifier si la séquence entière a été entrée
         if (konamiCodeIndex === konamiCode.length) {
-            // La séquence complète a été entrée, faites quelque chose ici
+            // La séquence complète a été entrée.
             window.location.href = "journal_de_bord.php";
 
             // Réinitialiser l'index pour permettre la détection de la prochaine séquence
