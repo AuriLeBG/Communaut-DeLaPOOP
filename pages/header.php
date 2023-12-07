@@ -8,6 +8,9 @@
                 <i class="fa-solid fa-heart"></i>
             </div>
         </a>
+        <div id ="version_easter_egg">
+            Version du site : 13
+        </div>
     </div>
 
 </header>
