@@ -8,7 +8,6 @@ use Class\CliMatch\Question;
 
 ob_start();
 
-echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 <div id="match">

@@ -7,7 +7,7 @@
     },
     {
         "question": "Est-ce que tous les plastiques sont recyclables ?",
-        "anwser": false,
+        "answer": false,
         "explication": "Non, tous les plastiques ne sont pas recyclables. Certains types de plastiques ne peuvent pas être recyclés en raison de leur composition chimique.",
         "image" : "plastique.webp"
     },
@@ -19,7 +19,7 @@
     },
     {
         "question": "Est-ce que le réchauffement climatique est uniquement causé par l'activité humaine ?",
-        "anwser": false,
+        "answer": false,
         "explication": "Non, bien que l'activité humaine soit un facteur majeur du réchauffement climatique, d'autres facteurs naturels comme les éruptions volcaniques et les variations solaires jouent également un rôle.",
         "image": "rechauffement_climatique.webp"
     },
@@ -58,5 +58,65 @@
         "answer": true,
         "explication": "Oui, la pollution de l'air peut avoir de graves conséquences sur la santé humaine, y compris des maladies respiratoires et cardiovasculaires.",
         "image": "pollution_air.webp"
+    },
+    {
+        "question": "Est-ce que le covoiturage peut aider à réduire les émissions de gaz à effet de serre ?",
+        "answer": true,
+        "explication": "Oui, le covoiturage peut aider à réduire les émissions de gaz à effet de serre en diminuant le nombre de véhicules sur la route.",
+        "image":"covoiturage.webp"
+    },
+    {
+        "question": "Est-ce que toutes les espèces de plantes sont bénéfiques pour l'environnement ?",
+        "answer": false,
+        "explication": "Non, certaines espèces de plantes peuvent être nuisibles pour l'environnement, notamment les espèces invasives qui peuvent perturber les écosystèmes locaux.",
+        "image":"plante_invasive.webp"
+    },
+    {
+        "question": "Est-ce que l'énergie éolienne est une source d'énergie renouvelable ?",
+        "answer":true,
+        "explication": "Oui, l'énergie éolienne est une source d'énergie renouvelable car elle provient du vent, qui est une ressource inépuisable.",
+        "image":"eolienne.webp"
+    },
+    {
+        "question": "Est-ce que le changement climatique peut affecter la biodiversité ?",
+        "answer":true,
+        "explication": "Oui, le changement climatique peut affecter la biodiversité en modifiant les habitats et en perturbant les cycles de vie des espèces.",
+        "image":"lynx.webp"
+    },
+    {
+        "question": "Est-ce que la pollution de l'eau peut affecter la santé humaine ?",
+        "answer":true,
+        "explication": "Oui, la pollution de l'eau peut avoir de graves conséquences sur la santé humaine, y compris des maladies d'origine hydrique.",
+        "image":"pollution_humain.webp"
+    },
+    {
+        "question": "Est-ce que le compostage peut aider à réduire les déchets ménagers ?",
+        "answer": true,
+        "explication": "Oui, le compostage peut aider à réduire les déchets ménagers en transformant les déchets organiques en un amendement de sol riche en nutriments.",
+        "image":"composte.webp"
+    },
+    {
+        "question": "Est-ce que toutes les sources d'énergie renouvelable sont sans impact sur l'environnement ?",
+        "answer":false,
+        "explication": "Non, bien que les sources d'énergie renouvelable soient généralement meilleures pour l'environnement que les combustibles fossiles, elles peuvent toujours avoir un impact sur l'environnement, par exemple par l'utilisation de terres ou l'impact sur les habitats locaux.",
+        "image":"energie_renouvelable.webp"
+    },
+    {
+        "question": "Est-ce que la surpêche peut menacer la biodiversité marine ?",
+        "answer":true,
+        "explication": "Oui, la surpêche peut menacer la biodiversité marine en épuisant les populations de poissons et en perturbant les écosystèmes marins.",
+        "image":"peche.webp"
+    },
+    {
+        "question": "Est-ce que la plantation d'arbres peut aider à atténuer le changement climatique ?",
+        "answer":true,
+        "explication": "Oui, la plantation d'arbres peut aider à atténuer le changement climatique en absorbant le dioxyde de carbone de l'atmosphère.",
+        "image":"plantation_arbre.webp"
+    },
+    {
+        "question": "Est-ce que l'utilisation de produits chimiques dans l'agriculture peut affecter la qualité de l'eau ?",
+        "answer":true,
+        "explication": "Oui, l'utilisation de produits chimiques dans l'agriculture peut affecter la qualité de l'eau en entraînant la contamination des eaux souterraines et de surface par les pesticides et les engrais.",
+        "image":"agriculture_chimique.webp"
     }
 ]
