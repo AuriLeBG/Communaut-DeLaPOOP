@@ -28,5 +28,35 @@
         "answer" : true,
         "explication": "Oui, la consommation excessive d'eau peut avoir un impact sur l'environnement en épuisant les ressources en eau douce et en perturbant les écosystèmes aquatiques.",
         "image": "mer.webp"
+    },
+    {
+        "question": "Les émissions de gaz à effet de serre sont-elles la principale cause du réchauffement climatique ?",
+        "answer": true,
+        "explication": "Oui, les émissions de gaz à effet de serre dues à l'activité humaine sont la principale cause du réchauffement climatique.",
+        "image": "ges.webp"
+    },
+    {
+        "question": "Est-ce que toutes les espèces en voie de disparition peuvent être sauvées ?",
+        "answer": false,
+        "explication": "Non, malheureusement, toutes les espèces en voie de disparition ne peuvent pas être sauvées, malgré les efforts de conservation.",
+        "image": "koala.webp"
+    },
+    {
+        "question": "Est-ce que l'agriculture biologique est meilleure pour l'environnement ?",
+        "answer": true,
+        "explication": "Oui, l'agriculture biologique est généralement considérée comme meilleure pour l'environnement car elle utilise moins de pesticides et d'engrais chimiques.",
+        "image": "champs.webp"
+    },
+    {
+        "question": "Est-ce que le recyclage est suffisant pour réduire les déchets ?",
+        "answer": false,
+        "explication": "Non, le recyclage seul n'est pas suffisant pour réduire les déchets. Il est également important de réduire la consommation et de réutiliser les produits autant que possible.",
+        "image": "recyclage.webp"
+    },
+    {
+        "question": "Est-ce que la pollution de l'air peut affecter la santé humaine ?",
+        "answer": true,
+        "explication": "Oui, la pollution de l'air peut avoir de graves conséquences sur la santé humaine, y compris des maladies respiratoires et cardiovasculaires.",
+        "image": "pollution_air.webp"
     }
 ]
