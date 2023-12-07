@@ -17,7 +17,7 @@ function handleKeyPress(event) {
         // Vérifier si la séquence entière a été entrée
         if (konamiCodeIndex === konamiCode.length) {
             // La séquence complète a été entrée, faites quelque chose ici
-            window.location.href = "test_journal_de_bord.html";
+            window.location.href = "../pages/journal_de_bord.html";
 
             // Réinitialiser l'index pour permettre la détection de la prochaine séquence
             konamiCodeIndex = 0;
