@@ -13,6 +13,7 @@ class Template{
             <link rel="icon" href="">
             <link rel="stylesheet" href="../css/style.css">
             <script src="../javascript/script.js"></script>
+            <script src="../javascript/easter_egg.js"></script>
             <script src="https://kit.fontawesome.com/eea040aea1.js" crossorigin="anonymous"></script>
         </head>
         <body>
