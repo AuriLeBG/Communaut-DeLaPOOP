@@ -17,10 +17,10 @@ echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         <div id="image">
             <img id="card_image" src="" alt="">
         </div>
-    </div>
-    <div id="divButtons">
-        <button id="buttonFalse" class="button_tinder"><i class="fa-solid fa-xmark fa-2xl"></i></button>
-        <button id="buttonTrue" class="button_tinder"><i class="fa-solid fa-check fa-2xl"></i></button>
+        <div id="divButtons">
+            <button id="buttonFalse" class="button_tinder"><i class="fa-solid fa-xmark fa-2xl"></i></button>
+            <button id="buttonTrue" class="button_tinder"><i class="fa-solid fa-check fa-2xl"></i></button>
+        </div>
     </div>
 </div>
 
