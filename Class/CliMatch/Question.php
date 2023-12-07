@@ -1,6 +1,6 @@
 <?php
 
-namespace Class;
+namespace Class\CliMatch;
 
 class Question
 {
@@ -12,5 +12,4 @@ class Question
 
     }
 
-    function
 }
