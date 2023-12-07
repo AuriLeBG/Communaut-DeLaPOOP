@@ -3,27 +3,30 @@
         "question": "La déforestation contribue-t-elle au changement climatique ?",
         "answer": true, 
         "explication": "Oui, la déforestation contribue au changement climatique en libérant du dioxyde de carbone stocké dans les arbres lorsqu'ils sont coupés et brûlés.",
-        "image": "deforestation.png"
+        "image": "deforestation.webp"
     },
     {
         "question": "Est-ce que tous les plastiques sont recyclables ?",
         "anwser": false,
         "explication": "Non, tous les plastiques ne sont pas recyclables. Certains types de plastiques ne peuvent pas être recyclés en raison de leur composition chimique.",
-        "image" : "plastique.png"
+        "image" : "plastique.webp"
     },
     {
         "question": "L'énergie solaire est-elle une source d'énergie renouvelable ?",
         "answer": true,
-        "explication": "Oui, l'énergie solaire est une source d'énergie renouvelable car elle provient du soleil, qui est une ressource inépuisable."
+        "explication": "Oui, l'énergie solaire est une source d'énergie renouvelable car elle provient du soleil, qui est une ressource inépuisable.",
+        "image": "panneau_solaire.webp"
     },
     {
         "question": "Est-ce que le réchauffement climatique est uniquement causé par l'activité humaine ?",
         "anwser": false,
-        "explication": "Non, bien que l'activité humaine soit un facteur majeur du réchauffement climatique, d'autres facteurs naturels comme les éruptions volcaniques et les variations solaires jouent également un rôle."
+        "explication": "Non, bien que l'activité humaine soit un facteur majeur du réchauffement climatique, d'autres facteurs naturels comme les éruptions volcaniques et les variations solaires jouent également un rôle.",
+        "image": "rechauffement_climatique.webp"
     },
     {
         "question": "Est-ce que la consommation d'eau a un impact sur l'environnement ?",
         "answer" : true,
-        "explication": "Oui, la consommation excessive d'eau peut avoir un impact sur l'environnement en épuisant les ressources en eau douce et en perturbant les écosystèmes aquatiques."
+        "explication": "Oui, la consommation excessive d'eau peut avoir un impact sur l'environnement en épuisant les ressources en eau douce et en perturbant les écosystèmes aquatiques.",
+        "image": "mer.webp"
     }
 ]
