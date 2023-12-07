@@ -29,5 +29,5 @@ echo "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $content = ob_get_clean();
 $class_question = new Question();
 $data = $class_question->lire_json("question.json");
-$class_question->afficher_image_json($data[0]->image);
+//$class_question->afficher_image_json($data[0]->image);
 Template::render($content);
