@@ -14,7 +14,6 @@ async function getData() {
     return questionsList
 }
 
-getData()
 
 document.addEventListener('DOMContentLoaded', async function () {
     let questionsList = await getData()
