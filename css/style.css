@@ -62,3 +62,7 @@ footer {
 #card{
     height: 420px;
 }
+
+.hide{
+    display: none;
+}

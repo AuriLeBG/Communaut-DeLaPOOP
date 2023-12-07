@@ -18,11 +18,17 @@ async function getData() {
 document.addEventListener('DOMContentLoaded', async function () {
     let questionsList = await getData()
 
+    let image = document.getElementById('card_image')
+    let question = document.getElementById('question')
+    let title = document.getElementById('title')
+
     let buttonFalse = document.getElementById('buttonFalse');
     let buttonTrue = document.getElementById('buttonTrue');
+    let buttonNext = document.getElementById('next');
 
-    let question = document.getElementById('question')
-    let image = document.getElementById('card_image')
+    let answer = document.getElementById('answer')
+    let titleAnswer = document.getElementById('titleAnswer')
+    let details = document.getElementById('details')
 
 
     let currentQuestion;
@@ -31,20 +37,57 @@ document.addEventListener('DOMContentLoaded', async function () {
     console.log(currentQuestion)
 
     function changeQuestion(){
-        let index = Math.floor(Math.random() * (questionsList.length) )
-        currentQuestion = questionsList[index]
-        questionsList.splice(index, 1)
-        question.textContent = currentQuestion.question
+        if(questionsList.length > 0){
+            let index = Math.floor(Math.random() * (questionsList.length) )
+            currentQuestion = questionsList[index]
+            questionsList.splice(index, 1)
+            title.textContent = currentQuestion.question
+        }
+    }
+
+    function wrongAnswer()
+    {
+        titleAnswer.textContent = 'Incorrect !'
+    }
+
+    function correctAnswer()
+    {
+        titleAnswer.textContent = 'Correct !'
+    }
+
+    function revealCorrection(){
+        question.classList.add('hide')
+        answer.classList.remove('hide')
+
+        details.textContent = currentQuestion.explication
+    }
+
+    function hideCorrection(){
+        question.classList.remove('hide')
+        answer.classList.add('hide')
+    }
+
+    function verifyAnswer(answer)
+    {
+        if(currentQuestion.answer === answer)
+            correctAnswer()
+        else
+            wrongAnswer()
+        revealCorrection()
     }
 
     buttonFalse.addEventListener('mousedown', function(){
-        if(questionsList.length > 0)
-            changeQuestion()
+        verifyAnswer(false)
+
     })
 
     buttonTrue.addEventListener('mousedown', function(){
-        if(questionsList.length > 0)
-            changeQuestion()
+        verifyAnswer(true)
+    })
+
+    buttonNext.addEventListener('mousedown', function(){
+        hideCorrection()
+        changeQuestion()
     })
 })
 
