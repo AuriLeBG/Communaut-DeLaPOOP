@@ -12,6 +12,7 @@ body{
     width : 75px;
     margin: 10px;
     background-color: ghostwhite;
+    align-content: baseline;
 }
 
 footer {
@@ -97,11 +98,21 @@ footer {
 #titleAnswer{
     font-weight: bold;
     font-size: x-large;
+    padding: 10px;
 }
 
-#details{
-
+#card_image{
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+    padding: 10px;
 }
 
+#divButtons{
+    vertical-align: bottom;
+}
 
+#title{
+    padding: 10px;
+}
 
