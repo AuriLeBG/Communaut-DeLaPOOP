@@ -11,8 +11,9 @@ class Template{
             <meta charset="UTF-8">
             <title>CliMatch</title>
             <link rel="icon" href="">
-            <link rel="stylesheet" href="../CSS/styles.css">
+            <link rel="stylesheet" href="../css/style.css">
             <script src="../js/script.js"></script>
+            <script src="https://kit.fontawesome.com/eea040aea1.js" crossorigin="anonymous"></script>
         </head>
         <body>
             <?php include "header.php" ?>

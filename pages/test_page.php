@@ -12,11 +12,11 @@
 
 <?php include "header.php" ?>
 
-<button>
+<button class="button_tinder">
     <i class="fa-solid fa-check fa-2xl"></i>
 </button>
 
-<button>
+<button class="button_tinder">
     <i class="fa-solid fa-xmark fa-2xl"></i>
 </button>
 
