@@ -82,6 +82,14 @@ footer {
     border: 3px solid cornflowerblue;
 }
 
+.card-correct{
+    background-color: lightgreen !important;
+}
+
+.card-error{
+    background-color: lightcoral !important;
+}
+
 #title{
     font-size: larger;
 }
