@@ -12,6 +12,7 @@ body{
     width : 75px;
     margin: 10px;
     background-color: ghostwhite;
+    align-content: baseline;
 }
 
 footer {
@@ -29,15 +30,16 @@ footer {
 
 #menu{
     background-color: #9ebbef;
-    font-size: x-large;
+    font-size: xxx-large;
     font-weight: bold;
     border-radius: 5px;
     vertical-align: middle;
+    padding: 10px;
 }
 
 #main-title{
     align-self: center;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 #footerText{
@@ -91,5 +93,31 @@ footer {
 
 .hide{
     display: none;
+}
+
+#titleAnswer{
+    font-weight: bold;
+    font-size: x-large;
+    padding: 10px;
+}
+
+#card_image{
+    max-width: 400px;
+    max-height: 220px;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 10px;
+}
+
+#divButtons{
+    vertical-align: bottom;
+}
+
+#details{
+    padding: 10px;
+}
+
+#title{
+    padding: 10px;
 }
 
