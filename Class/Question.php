@@ -7,7 +7,8 @@ class Question
     private string $question;
     private bool $answer;
     private string $image;
-    function __construct(String $titre){
+    private string $explanation;
+    function __construct(string $question, string $answer, string $image){
 
     }
 }
