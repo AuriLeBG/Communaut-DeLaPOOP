@@ -11,7 +11,7 @@ function afficherJournal(journal) {
                 setTimeout(function() {
                     index++;
                     afficherLigne();
-                }, 0);
+                }, 1000);
             });
         }
     }
@@ -22,7 +22,7 @@ function afficherJournal(journal) {
             document.getElementById('terminalContainer').scrollTop = document.getElementById('terminalContainer').scrollHeight;
             setTimeout(function() {
                 afficherCaractereParCaractere(texte, i + 1, callback);
-            }, 0); // DÃ©lai entre chaque caractÃ¨re (ajustez selon vos prÃ©fÃ©rences)
+            }, 25); // DÃ©lai entre chaque caractÃ¨re (ajustez selon vos prÃ©fÃ©rences)
         } else {
             callback();
         }
