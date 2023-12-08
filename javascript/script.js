@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             rotationPinguin2=(rotationPinguin2+1)%361;
             if(rotationPinguin2 === max)
                 clearInterval(interval)
-            pinguin2.style.transform="rotateZ("+ sens*rotationPinguin2 +"deg)";
+            pinguin2.style.transform="rotateZ("+ sens*rotationPinguin2 +"deg) scaleX(-1)";
 
         }, 4);
     }
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         rotationPinguin2 += delta/5;
 
         pinguin.style.transform = 'rotate(' + rotationPinguin + 'deg)';
-        pinguin2.style.transform = "rotateZ("+ rotationPinguin2 +"deg)";
+        pinguin2.style.transform = "rotateZ("+ rotationPinguin2 +"deg) scaleX(-1)";
 
     }
 
