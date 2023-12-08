@@ -37,6 +37,7 @@ ob_start();
             <div id="corrects">Nombres de bonnes réponses : </div>
             <div id="errors">Nombres de mauvaises réponses : </div>
         </div>
+
     </div>
 
 </div>
