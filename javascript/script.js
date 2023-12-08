@@ -102,10 +102,27 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     }
 
+    //code mal écrit pour défi movai code
     function revealCorrection(){
-        question.classList.add('hide')
-        answer.classList.remove('hide')
-        details.textContent = currentQuestion.explication
+        let ________________ = 'toto'
+        let ___ = true
+        let __ = !true
+        let ____ = ___
+        let _____ = 'h'+'i'+'d'+'e'
+        let _ = 'mov'+'ai'+'co'+'de'
+        if(_____==_____ && _____!=_ && true){question.classList.add(_____)}
+        let ______ = 'h'+ 'id'+'e'
+        while(___==__){
+            print('foobar\n')
+        }
+        for(let ______ = 0; ______ < 10000000 ; ______ = ______ + 0.1){
+            if(____==__){
+                print('t'+'o'+'t'+'o')
+            }
+        }
+        answer.classList.remove(_____)
+        if(___==___){details.textContent = currentQuestion.explication}
+        let _______ = 'aurevoir'
     }
 
     function hideCorrection(){
