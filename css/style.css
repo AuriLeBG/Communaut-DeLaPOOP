@@ -78,7 +78,7 @@ footer {
 #card{
     place-self: center ;
     padding: 20px;
-    width: 50%;
+    width: 400px;
     text-align: center;
     background-color: ghostwhite;
     border-radius: 10px;
@@ -104,9 +104,6 @@ footer {
     width: 75px;
     vertical-align: middle;
 }
-#card{
-    height: 420px;
-}
 
 .hide{
     display: none;
@@ -118,11 +115,12 @@ footer {
     padding: 10px;
 }
 
-#card_image{
+#image{
     max-width: 400px;
     max-height: 220px;
     overflow: hidden;
     object-fit: cover;
+    object-position: center;
     padding: 10px;
 }
 
@@ -130,8 +128,8 @@ footer {
     vertical-align: bottom;
 }
 
-#details{
-    padding: 10px;
+#details, #image{
+    padding: 20px;
     width: auto;
     height: 220px;
 }
@@ -153,6 +151,6 @@ footer {
     width: 49%;
 }
 
-#pinguin{
+#pinguin1, #pinguin2{
     place-self: center start;
 }

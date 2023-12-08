@@ -9,7 +9,7 @@ use Class\CliMatch\Question;
 ob_start();
 
 ?>
-<div id="pinguin">
+<div id="pinguin1">
     <img id="img_pinguin" src="../image/pingouin/pengouin.png">
 </div>
 
@@ -40,6 +40,10 @@ ob_start();
 
     </div>
 
+</div>
+
+<div id="pinguin2">
+    <img id="img_pinguin" src="../image/pingouin/pengouin.png">
 </div>
 
 <?php
