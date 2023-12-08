@@ -117,26 +117,34 @@ footer {
 }
 
 #image{
-    max-width: 400px;
-    max-height: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+#card_image{
+    height: 220px;
+    max-width: 90%;
+    margin: 5px;
+    z-index: 0;
     overflow: hidden;
     object-fit: cover;
-    object-position: center;
-    padding: 10px;
 }
 
 #divButtons{
     vertical-align: bottom;
 }
 
-#details, #image{
-    padding: 20px;
+#details{
     width: auto;
     height: 220px;
 }
+#details{
+    padding: 20px;
+}
 
 #title{
-    padding: 10px;
+    height: 90px;
+    margin: 10px;
 }
 
 #answer{
