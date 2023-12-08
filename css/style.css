@@ -76,6 +76,7 @@ footer {
 }
 
 #card{
+    margin: 20px;
     place-self: center ;
     padding: 20px;
     width: 400px;
@@ -157,4 +158,8 @@ footer {
 
 #img_pinguin2{
     transform: scaleX(-1);
+}
+
+#titleResults, #corrects, #errors{
+    padding: 10px;
 }
