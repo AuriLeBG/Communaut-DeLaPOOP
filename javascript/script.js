@@ -37,6 +37,10 @@ document.addEventListener('DOMContentLoaded', async function () {
     let nbErrorsSuccessive = 0
     let nbCorrectsSuccessive = 0
 
+    let rotationPinguin = 0
+    let rotationPinguin2 = 0
+
+
     let currentQuestion;
     changeQuestion()
 
@@ -49,6 +53,28 @@ document.addEventListener('DOMContentLoaded', async function () {
         image.setAttribute('src', "../image/"+currentQuestion.image)
 
     }
+
+    function turnPinguin1(max, sens){
+        let interval = setInterval(function(){
+            rotationPinguin=(rotationPinguin+1)%361;
+            console.log(rotationPinguin)
+            if(rotationPinguin === max)
+                clearInterval(interval)
+            pinguin.style.transform="rotateZ("+ sens*rotationPinguin +"deg)";
+
+        }, 4);
+    }
+
+    function turnPinguin2(max, sens){
+        let interval = setInterval(function(){
+            rotationPinguin2=(rotationPinguin2+1)%361;
+            if(rotationPinguin2 === max)
+                clearInterval(interval)
+            pinguin2.style.transform="rotateZ("+ sens*rotationPinguin2 +"deg)";
+
+        }, 4);
+    }
+
 
     function wrongAnswer()
     {
@@ -71,7 +97,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         nbCorrectsSuccessive++
         pinguin.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
         pinguin2.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
+        if(nbCorrectsSuccessive >= 10){
 
+        }
     }
 
     function revealCorrection(){
@@ -119,6 +147,28 @@ document.addEventListener('DOMContentLoaded', async function () {
             titleResults.textContent = "Malheureusement, il n'y a plus d'autres questions !"
         }
     })
+
+    pinguin.addEventListener('mousedown', function(){
+        turnPinguin1( (rotationPinguin+360)%361, 1)
+    })
+    pinguin2.addEventListener('mousedown', function(){
+        turnPinguin2( (rotationPinguin2+360)%361, -1)
+    })
+
+
+    function handleMouseWheel(event) {
+        var delta = event.deltaY || (event.wheelDeltaY && -event.wheelDeltaY) || 0;
+
+        rotationPinguin += delta/5;
+        rotationPinguin2 += delta/5;
+
+        pinguin.style.transform = 'rotate(' + rotationPinguin + 'deg)';
+        pinguin2.style.transform = "rotateZ("+ rotationPinguin2 +"deg)";
+
+    }
+
+    // Ajoutez un écouteur d'événement pour le mouvement de la molette de la souris
+    document.addEventListener('wheel', handleMouseWheel);
 })
 
 

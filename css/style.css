@@ -21,6 +21,10 @@ body{
     align-content: baseline;
 }
 
+.button_tinder:hover{
+    cursor: pointer;
+}
+
 footer {
     position: fixed ;
     text-align: center;
@@ -73,6 +77,21 @@ footer {
 #buttonTrue{
     margin-left: 20%;
     color : green;
+}
+
+#buttonTrue:hover{
+    color: white;
+    background-color: green;
+}
+
+#buttonFalse:hover{
+    color: white;
+    background-color: red;
+}
+
+#next:hover{
+    color: white;
+    background-color: black;
 }
 
 #card{
