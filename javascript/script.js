@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     }
 
+
     function turnPinguin1(max, sens){
         let interval = setInterval(function(){
             rotationPinguin=(rotationPinguin+1)%361;
