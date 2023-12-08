@@ -8,10 +8,9 @@ var konamiCodeIndex = 0;
 function handleKeyPress(event) {
     // Récupérer le code de la touche
     var keyCode = event.code;
+    let div = document.getElementById("img_pinguin");
     // Vérifier si la touche actuelle correspond à la séquence attendue
     if (keyCode === konamiCode[konamiCodeIndex]) {
-        let div = document.getElementById("img_pinguin");
-        console.log(div);
         // La touche est correcte, passer à la suivante
         konamiCodeIndex++;
         if(konamiCodeIndex === 1 || konamiCodeIndex === 2){
@@ -43,6 +42,7 @@ function handleKeyPress(event) {
     } else {
         // La touche ne correspond pas à la séquence, réinitialiser l'index
         konamiCodeIndex = 0;
+        div.src = '../image/pingouin/pengouin.png';
     }
 }
 
