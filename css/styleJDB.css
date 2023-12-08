@@ -3,11 +3,11 @@ body {
     padding: 0;
     overflow: hidden;
     background-color: black;
+    color: limegreen;
 }
 
 #terminalContainer {
     margin: 2em 1em 4em 1em; /* Modifié pour respecter vos spécifications */
-    color: limegreen;
     font-family: 'Courier New', monospace;
     white-space: pre-wrap;
     overflow-y: auto;

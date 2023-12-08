@@ -21,7 +21,7 @@
   },
   {
     "heure": "20h07",
-    "action": "Première menace physique (Une bouteille de lipton vide est devenue un projectile). Tom pare le projectile."
+    "action": "Première menace physique (Une bouteille de Lipton vide est devenue un projectile). Tom pare le projectile."
   },
   {
     "heure": "20h20",
@@ -105,7 +105,7 @@
   },
   {
     "heure": "22h15",
-    "action": "Ça y est j'ai atteint le point de rupture où j'ai plus de sucre que de sang dans le corps. -Valentin"
+    "action": "\"Ça y est j'ai atteint le point de rupture où j'ai plus de sucre que de sang dans le corps.\" -Valentin"
   },
   {
     "heure": "22h44",
@@ -150,5 +150,25 @@
   {
     "heure": "00h29",
     "action": "\"L'atome est dieu.\" -Honoré"
+  },
+  {
+    "heure": "00h41",
+    "action": "Une nouvelle branche a été découverte."
+  },
+  {
+    "heure": "00h45",
+    "action": "Tom a mis de l'eau partout, même sur les PC."
+  },
+  {
+    "heure": "01h34",
+    "action": "\"Tom je vais te tuer à cause d'un pingouin.\" -Margot"
+  },
+  {
+    "heure": "01h48",
+    "action": "Je ne sais pas pourquoi je continue ce journal de bord personne ne lira aussi loin."
+  },
+  {
+    "heure": "1h59",
+    "action": "\"On va te faire sauter Tom.\" -Honoré"
   }
 ]

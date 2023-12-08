@@ -8,7 +8,6 @@
     <script src="../javascript/Journal_de_bord.js"></script>
 </head>
 <body>
-
-<div id="terminalContainer"></div>
+    <div id="terminalContainer"></div>
 </body>
 </html>
