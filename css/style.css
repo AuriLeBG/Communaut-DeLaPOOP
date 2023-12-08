@@ -154,3 +154,7 @@ footer {
 #pinguin1, #pinguin2{
     place-self: center start;
 }
+
+#img_pinguin2{
+    transform: scaleX(-1);
+}
