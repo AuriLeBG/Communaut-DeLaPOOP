@@ -10,7 +10,7 @@ ob_start();
 
 ?>
 <div id="pinguin">
-    <img id="img_pinguin" src="../image/pingouin/pengouin.png"
+    <img id="img_pinguin" src="../image/pingouin/pengouin.png">
 </div>
 
 <div id="match">
