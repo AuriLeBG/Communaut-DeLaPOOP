@@ -7,6 +7,7 @@ async function getData() {
 
 
 document.addEventListener('DOMContentLoaded', async function () {
+    console.log(Math.trunc(9/3))
     let questionsList = await getData()
 
     let card = document.getElementById('card')
@@ -56,8 +57,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         nbErrors++;
         nbErrorsSuccessive++;
         nbCorrectsSuccessive = 0
-        pinguin.setAttribute('src', '../image/pingouin/sad-'+Math.min(nbErrorsSuccessive,3)+'.png')
-        pinguin2.setAttribute('src', '../image/pingouin/sad-'+Math.min(nbErrorsSuccessive,3)+'.png')
+        pinguin.setAttribute('src', '../image/pingouin/sad-'+Math.min(Math.trunc(nbErrorsSuccessive/3)+1,3)+'.png')
+        pinguin2.setAttribute('src', '../image/pingouin/sad-'+Math.min(Math.trunc(nbErrorsSuccessive/3)+1,3)+'.png')
 
     }
 
@@ -68,8 +69,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         nbCorrects++;
         nbErrorsSuccessive = 0
         nbCorrectsSuccessive++
-        pinguin.setAttribute('src', '../image/pingouin/happy-'+Math.min(nbCorrectsSuccessive,3)+'.png')
-        pinguin2.setAttribute('src', '../image/pingouin/happy-'+Math.min(nbCorrectsSuccessive,3)+'.png')
+        pinguin.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
+        pinguin2.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
 
     }
 
