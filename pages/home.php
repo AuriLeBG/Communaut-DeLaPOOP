@@ -43,7 +43,7 @@ ob_start();
 </div>
 
 <div id="pinguin2">
-    <img id="img_pinguin" src="../image/pingouin/pengouin.png">
+    <img id="img_pinguin2" src="../image/pingouin/pengouin.png">
 </div>
 
 <?php
