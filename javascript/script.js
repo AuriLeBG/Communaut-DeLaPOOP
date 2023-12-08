@@ -7,7 +7,6 @@ async function getData() {
 
 
 document.addEventListener('DOMContentLoaded', async function () {
-    console.log(Math.trunc(9/3))
     let questionsList = await getData()
 
     let card = document.getElementById('card')
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', async function () {
     function turnPinguin1(max, sens){
         let interval = setInterval(function(){
             rotationPinguin=(rotationPinguin+1)%361;
-            console.log(rotationPinguin)
             if(rotationPinguin === max)
                 clearInterval(interval)
             pinguin.style.transform="rotateZ("+ sens*rotationPinguin +"deg)";
