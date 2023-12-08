@@ -42,21 +42,22 @@ footer {
     margin: 10px;
 }
 
-#weshmargot{
+#CliMatch{
     display: inline;
 }
 
 #footerText{
-    align-self: center;
-    margin-top: 15px;
-    margin-left: 10px;
+
 }
 
 #titlelogo{
     color: black;
     text-decoration: none;
     vertical-align: middle;
+    width: 200px;
+    position: relative;
 }
+
 
 #buttonFalse {
     margin-right: 20%;
@@ -127,9 +128,24 @@ footer {
 
 #details{
     padding: 10px;
+    width: auto;
+    height: 220px;
 }
 
 #title{
     padding: 10px;
+}
+
+#answer{
+   text-align : center;
+}
+
+#footerText, #version_easter_egg{
+    align-self: center;
+    margin-top: 15px;
+    margin-left: 10px;
+    float:left;
+    display:inline;
+    width: 49%;
 }
 
