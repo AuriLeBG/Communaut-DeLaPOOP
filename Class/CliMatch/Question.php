@@ -14,7 +14,7 @@ class Question
 
     //Permet de convertir le json en un array.
     function lire_json(string $fichier): array {
-        $texte = json_decode(file_get_contents(__DIR__ . "\..\\..\\" . $fichier));
+        $texte = json_decode(file_get_contents(__DIR__ . DIRECTORY_SEPARATOR.  ".." .DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR  . $fichier));
         return $texte;
     }
 

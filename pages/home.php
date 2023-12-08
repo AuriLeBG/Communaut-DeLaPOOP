@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once "..".DIRECTORY_SEPARATOR."Class" . DIRECTORY_SEPARATOR . "autoloader.php";
+require_once(realpath(dirname(__FILE__) . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'Class' . DIRECTORY_SEPARATOR . 'autoloader.php'));
 
 use Class\CliMatch\Template;
 use Class\CliMatch\Question;

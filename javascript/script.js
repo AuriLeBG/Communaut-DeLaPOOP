@@ -1,6 +1,6 @@
 
 async function getData() {
-    let response = await fetch('http://localhost/Communaut-DeLaPOOP/pages/get_questions.php');
+    let response = await fetch('https://lacommunautedelapoop.alwaysdata.net/pages/get_questions.php');
     let questionsList = await response.json()
     return questionsList
 }
