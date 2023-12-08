@@ -96,7 +96,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         pinguin.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
         pinguin2.setAttribute('src', '../image/pingouin/happy-'+Math.min(Math.trunc(nbCorrectsSuccessive/3)+1,3)+'.png')
         if(nbCorrectsSuccessive >= 10){
-
+            turnPinguin1((rotationPinguin2+360)%360, 1)
+            turnPinguin2((rotationPinguin2+360)%360, -1)
         }
     }
 
