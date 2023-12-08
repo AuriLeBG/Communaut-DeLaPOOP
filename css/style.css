@@ -82,12 +82,12 @@ footer {
     border: 3px solid cornflowerblue;
 }
 
-.card-correct{
-    background-color: lightgreen !important;
+.title-correct{
+    color: lightgreen !important;
 }
 
-.card-error{
-    background-color: lightcoral !important;
+.title-error{
+    color: lightcoral !important;
 }
 
 #title{

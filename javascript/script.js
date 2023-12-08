@@ -30,6 +30,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     let nbCorrects = 0
     let nbErrors = 0
+    let nbErrorsSuccessive = 0
+    let nbCorrectsSuccessive = 0
 
     let currentQuestion;
     changeQuestion()
@@ -47,15 +49,19 @@ document.addEventListener('DOMContentLoaded', async function () {
     function wrongAnswer()
     {
         titleAnswer.textContent = 'Incorrect !'
-        card.classList.add('card-error')
+        titleAnswer.classList.add('title-error')
         nbErrors++;
+        nbErrorsSuccessive++;
+        nbCorrectsSuccessive = 0
     }
 
     function correctAnswer()
     {
         titleAnswer.textContent = 'Correct !'
-        card.classList.add('card-correct')
+        titleAnswer.classList.add('title-correct')
         nbCorrects++;
+        nbErrorsSuccessive = 0
+        nbCorrectsSuccessive++
     }
 
     function revealCorrection(){
@@ -67,8 +73,8 @@ document.addEventListener('DOMContentLoaded', async function () {
     function hideCorrection(){
         question.classList.remove('hide')
         answer.classList.add('hide')
-        card.classList.remove('card-correct')
-        card.classList.remove('card-error')
+        titleAnswer.classList.remove('title-correct')
+        titleAnswer.classList.remove('title-error')
     }
 
     function verifyAnswer(answer)
