@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     let errors = document.getElementById('errors')
 
     let pinguin = document.getElementById('img_pinguin');
+    let pinguin2 = document.getElementById('img_pinguin2');
 
     let nbCorrects = 0
     let nbErrors = 0
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         nbErrorsSuccessive++;
         nbCorrectsSuccessive = 0
         pinguin.setAttribute('src', '../image/pingouin/sad-'+Math.min(nbErrorsSuccessive,3)+'.png')
+        pinguin2.setAttribute('src', '../image/pingouin/sad-'+Math.min(nbErrorsSuccessive,3)+'.png')
 
     }
 
@@ -67,6 +69,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         nbErrorsSuccessive = 0
         nbCorrectsSuccessive++
         pinguin.setAttribute('src', '../image/pingouin/happy-'+Math.min(nbCorrectsSuccessive,3)+'.png')
+        pinguin2.setAttribute('src', '../image/pingouin/happy-'+Math.min(nbCorrectsSuccessive,3)+'.png')
+
     }
 
     function revealCorrection(){
